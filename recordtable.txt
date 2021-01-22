@@ -1,0 +1,7 @@
++------+------------+---------------------------+--------------------------+---------------------------------+----------------+
+| name | mobile     | native                    | current                  | work                            | aadhar         |
++------+------------+---------------------------+--------------------------+---------------------------------+----------------+
+| aaaa | 8976543210 | Banglore,Karnataka,India. | Chennai,Tamilnadu,India. | PAP constructions,Chennai,India | 7890 7654 4587 |
+| bbbb | 8976546784 | Banglore,Karnataka,India. | Chennai,Tamilnadu,India. | PAP constructions,Chennai,India | 9890 7654 4987 |
+| cccc | 9976546784 | Banglore,Karnataka,India. | Chennai,Tamilnadu,India. | PAP constructions,Chennai,India | 5590 7654 4987 |
++------+------------+---------------------------+--------------------------+---------------------------------+----------------+

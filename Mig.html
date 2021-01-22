@@ -1,0 +1,139 @@
+<!-- html forms -->
+<!-- JavaScript Form Validation -->
+<html>
+<head>
+
+    <title>Migration Workers Management System</title>
+	<style>
+
+		label
+		{
+
+            display:inline-block;
+			width:35%;
+
+            padding-left:100px;
+
+            text-align: left;
+
+            font-family:Verdana;
+
+            font-size:x-large;
+
+            letter-spacing:2px;
+
+            line-height:40px;
+
+          }
+          textarea { vertical-align: top; }
+
+          select { vertical-align: top; }
+
+         
+
+          .btn {width: 100px; height: 30px;}
+     </style>
+
+ 
+
+     <script type="text/javascript" language="javascript">
+
+          function fnvalidate()
+
+          {
+
+              // User Name Validation
+
+              var username = (document.form1.LN.value).toString().trim();
+
+              if( username == "" || username.length < 4)
+
+              {
+
+                   alert( "Invalid user name! Should have atleast 4 characters." );
+
+                   document.form1.LN.focus() ;
+
+                   return false;
+
+              }
+
+              // Mobile Number Validation
+
+              var mobnum = document.form1.MN.value;
+
+              if( isNaN(mobnum))
+
+              {
+
+                   alert( "Mobile Number can have digits only!" );
+
+                   document.form1.MN.focus() ;
+
+                   return false;
+
+              }
+
+               
+
+              var S = mobnum.toString().trim();
+
+              if(S.length!=10)
+
+              {
+
+                   alert( "Invalid Mobile Number!!! Must have 10 digits..." );
+
+                   document.form1.MN.focus() ;
+
+                   return false;
+
+              }  
+          
+             return true;
+
+          }
+
+     </script>
+
+</head>
+<body >
+	<form name="form1" action="http://localhost:8080/WT/Migration" method="post" onsubmit="return fnvalidate();">
+                 
+		  <CENTER><H1>MIGRATION WORKERS MANAGEMENT SYSTEM</H1></CENTER>
+		  <HR></HR>
+          <fieldset>
+
+          <legend>Registration Details </legend>
+
+          <label>Name </label>
+
+          <input type="text" name="LN"/>
+		  </br>
+          <label>Mobile Number </label>
+          <input type="text" name="MN" tabindex=4/> 
+          <br/>
+		  <br/>
+		  <label>Native Address </label>
+          <textarea type="txtArea" rows="3" cols="40" name="NA" tabindex=6></textarea>
+		  </br>
+		  </br>
+		  <label>Current Location </label>
+          <textarea type="txtArea" rows="3" cols="40" name="CL" tabindex=6></textarea>
+		  </br>
+		  </br>
+		  <label>Working Address </label>
+          <textarea type="txtArea" rows="3" cols="40" name="WA" tabindex=6></textarea>
+		  </br>
+		  </br>
+		  <label>Aadhar number </label>
+          <input type="text" name="AN" tabindex=10/>
+		  </br>
+		  </br>
+		  <center>
+		  <button class="btn" type="submit" tabindex=10>Submit </button>
+          <button class="btn" type="reset" tabindex=11>Reset </button>
+          </center>
+     </form>
+</body>
+</html>
